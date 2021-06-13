@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +7,51 @@
     <title>Formulário</title>
 </head>
 <body>
+    <main id="main">
+    <header>    
+    <!-- titulo do formulário -->
     <h1 id="title">
-
+        Formulário de Pesquisa
     </h1>
+    <!-- descrição -->
     <p id="description">
-
+        Formulário pra coletar informações sobre o usuário    
     </p>
-    <form action="" id="survey-form">
-
+    </header>
      
+    <!-- formulário -->
+    <form action="" id="survey-form"> 
+
+      <!-- campo do nome -->  
      <label for="name" id="name-label">
      Nome:    
      <input type="text" name="" id="name" placeholder="digite seu nome aqui...">
       </label>
-
+ 
+      <!-- campo de email --> 
     <label for="email" id="email-label">
       Email:  
      <input type="email" name="" id="email" placeholder="insira seu email aqui">
     </label>
 
+    <!-- campo de numero -->
     <label for="number" id="number-label">
     Number:
      <input type="number" name="" id="number" min="2" max="5" placeholder="coloque um número de 2 até no máximo 5">
-    </label>
-
+    </label> 
+    <!-- opção de sexo  -->
+        <p>Qual o seu sexo?</p>
+        <label for="masc"> 
+        <input type="radio" name="sexo" id="masc" value="masc"> Masculino
+         </label>
+         <label for="femi">
+        <input type="radio" name="sexo" id="femi" value="femi"> Feminino
+         </label>
+    
+   <!-- menu de seleção de cidade-->
+    Qual a sua cidade?
     <select name="" id="dropdown">
-       <optgroup name="SP">
+       <optgroup  value="SP">
              <option value="São Paulo">
                  São Paulo
              </option>
@@ -50,19 +69,31 @@
              </option>
        </optgroup>
     </select>
-    <label for="">
-
+   
+    <!-- caixas de seleção para bichos de estimação -->
+    <p>Quais bichos de estimação você possui?</p>
+    <label for="cavalo">   
+    <input type="checkbox" name="animal" id="cavalo" value="cavalo">Cavalo
     </label>
-    <label for="">
-        Quais bichos de estimação você possui?
-    <input type="checkbox" name="animal" id="" value="cavalo">Cavalo
-    <input type="checkbox" name="animal" id="" value="onca">Onça
-    <input type="checkbox" name="animal" id="" value="cobra">Cobra
-    <input type="checkbox" name="animal" id="" value="jacare">Jacaré
-    </label> 
-
+    <label for="onca">
+    <input type="checkbox" name="animal" id="onca" value="onca">Onça
+    </label>
+    <label for="cobra">
+    <input type="checkbox" name="animal" id="cobra" value="cobra">Cobra
+    </label>
+    <label for="jacare">
+    <input type="checkbox" name="animal" id="jacare" value="jacare">Jacaré
+    </label>
+    
+    <!-- texto para comentar  -->
+    <p>Deixe seu comentário</p>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+     
+    <!-- botão para enviar -->
+    <input type="submit" value="Enviar" id="submit">
      
 </form>
+</main>
 
 </body>
 </html>
